@@ -20,6 +20,9 @@ body {
 }
 
 #wrapper {
+	@include border-radius(0 0 3px 0);
+	border-top: 1px solid #dadada;
+	background-color: #f0f0f0;
 	margin-top: 28px;
 	margin-bottom: 28px;
 	overflow: hidden;
@@ -41,4 +44,12 @@ body {
 	&.as-dashboard-item {
 		margin-left: 147px;
 	}
+}
+
+.separator {
+	border-top: 1px solid #527283;
+	border-bottom: 2px solid #527283;
+	border-left: 0;
+	border-right: 0;
+	margin: 0;
 }

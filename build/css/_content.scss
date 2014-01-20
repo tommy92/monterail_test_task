@@ -10,11 +10,10 @@
 
 .dashboard-items {
 	li {
-		@include box-sizing(border-box);
-		width: 100%;
 		border-bottom: 1px solid #e5e5e5;
 		padding: 12px;
-		display: inline-block;
+		display: block;
+		overflow: hidden;
 
 		&.adopted { background-color: #fffde8; }
 		&.added { background-color: #e9fde9; }

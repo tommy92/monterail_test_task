@@ -1,9 +1,7 @@
 .page-control {
 	@include background-image(linear-gradient(#fafafa, #eeefee));
-	border-top: 1px solid #dadada;
 	border-left: 1px solid #dadada;
 	border-right: 1px solid #dadada;
-	border-bottom: 3px solid #527283;
 
 	.page-control-inner {
 		border-top: 1px solid #fff;
