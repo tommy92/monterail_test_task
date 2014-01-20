@@ -235,7 +235,58 @@ body {
   text-transform: uppercase;
   color: #fff;
   padding: 1px 6px;
-  font-size: 0.84em; }
+  font-size: 0.9em; }
   .badge.badge-checked {
     text-shadow: 1px 1px 1px #bf9271;
     background-color: #f5ba90; }
+  .badge.badge-small {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 0.8em; }
+  .badge.badge-number {
+    background-color: #dce4e8;
+    color: #006699; }
+  .badge.badge-unchecked {
+    text-shadow: 1px 1px 1px #8b8d8e;
+    background-color: #b3b5b7; }
+  .badge.badge-completed {
+    text-shadow: 1px 1px 1px #7e9c63;
+    background-color: #a4cc81; }
+
+.module {
+  margin-top: 30px; }
+  .module .module-title {
+    line-height: 46px;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 0 20px; }
+
+/* Relics module */
+.relics li {
+  border-top: 1px solid #d3d5d6;
+  padding: 18px;
+  overflow: hidden;
+  display: block; }
+  .relics li .relic-image {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 4px #d4d4d4;
+    -moz-box-shadow: 0 0 4px #d4d4d4;
+    box-shadow: 0 0 4px #d4d4d4;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    padding: 3px;
+    float: left;
+    margin-right: 16px; }
+  .relics li .relic-title {
+    font-size: 1.17em;
+    font-weight: 600;
+    color: #006699;
+    line-height: 28px;
+    margin-bottom: 2px; }

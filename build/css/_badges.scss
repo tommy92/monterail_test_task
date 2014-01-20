@@ -4,10 +4,32 @@
 	text-transform: uppercase;
 	color: #fff;
 	padding: 1px 6px;
-	font-size: 0.84em;
+	font-size: 0.9em;
 
 	&.badge-checked {
 		@include text-shadow(1px 1px 1px #bf9271);
 		background-color: #f5ba90;
+	}
+
+	&.badge-small {
+		@include box-shadow(none);
+		padding-left: 4px;
+		padding-right: 4px;
+		font-size: 0.8em;
+	}
+
+	&.badge-number {
+		background-color: #dce4e8;
+		color: #006699;
+	}
+
+	&.badge-unchecked {
+		@include text-shadow(1px 1px 1px #8b8d8e);
+		background-color: #b3b5b7;
+	}
+
+	&.badge-completed {
+		@include text-shadow(1px 1px 1px #7e9c63);
+		background-color: #a4cc81;
 	}
 }

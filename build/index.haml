@@ -102,7 +102,33 @@
 					%p.info-text.as-dashboard-item Jesteś przy ostaniej wiadomości.
 
 
-			%sidebar#sidebar
+			%sidebar#sidebar.fleft
+				.profile-picture
+					%img{ src: 'http://placehold.it/320x320', alt: 'profile pic' }
+
+				.module
+					%h3.module-title
+						Dodane zabytki
+						%span.badge.badge-small.badge-number 4
+					.module-content
+						%ul.relics
+							%li
+								%img.relic-image{ src: 'http://placehold.it/56x56', alt: 'relic' }
+								.relic-title Most Grunwaldzki
+								%span.badge.badge-checked Sprawdzony
+							%li
+								%img.relic-image{ src: 'http://placehold.it/56x56', alt: 'relic' }
+								.relic-title Sky Tower
+								%span.badge.badge-unchecked Niesprawdzony
+							%li
+								%img.relic-image{ src: 'http://placehold.it/56x56', alt: 'relic' }
+								.relic-title Katedra Wrocławska
+								%span.badge.badge-completed Uzupełniony
+							%li
+								%img.relic-image{ src: 'http://placehold.it/56x56', alt: 'relic' }
+								.relic-title Panorama Racławicka
+								%span.badge.badge-unchecked Niesprawdzony
+
 
 		%script{ src: '//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js' }
 		%script{ src: 'js/app.js' }
