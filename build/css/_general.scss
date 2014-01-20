@@ -1,0 +1,33 @@
+.center {
+	width: $pageWidth;
+	margin: 0 auto;
+}
+
+.clearfix {
+	@include pie-clearfix;
+}
+
+.fleft { float: left; }
+.fright { float: right; }
+
+
+body {
+	background-color: $bodyBG;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #313132;
+	font-size: .75em; // 12px
+	font-weight: 300;
+}
+
+#wrapper {
+	margin-top: 28px;
+
+	#main {
+		width: $mainWidth;
+	}
+
+	#sidebar {
+		width: $sidebarWidth;
+	}
+
+}

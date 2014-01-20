@@ -4,9 +4,24 @@
 		%title Test task for Monterail
 		%meta{ charset: "utf-8" }
 
+		%link{ href: 'http://fonts.googleapis.com/css?family=Open+Sans:300,600', rel: 'stylesheet' }
 		%link{ href: 'css/app.css', rel: 'stylesheet' }
 	%body
-		%h1 Test title
+		#wrapper.center
+			%section#main.fleft
+				%nav.page-control
+					.page-control-inner
+						%ul
+							%li.active
+								%a.activity{ href: '#' } Aktywność
+							%li
+								%a.viewed{ href: '#' } Sprawdzone przeze mnie
+							%li
+								%a.settings{ href: '#' } Ustawienia
+
+				#content{ role: 'main' }
+
+			%sidebar#sidebar
 
 		%script{ src: '//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js' }
 		%script{ src: 'js/app.js' }

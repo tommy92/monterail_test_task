@@ -44,3 +44,84 @@ a img {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
+
+.center {
+  width: 960px;
+  margin: 0 auto; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.fleft {
+  float: left; }
+
+.fright {
+  float: right; }
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #313132;
+  font-size: .75em;
+  font-weight: 300; }
+
+#wrapper {
+  margin-top: 28px; }
+  #wrapper #main {
+    width: 640px; }
+  #wrapper #sidebar {
+    width: 320px; }
+
+.page-control {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #eeefee));
+  background-image: -webkit-linear-gradient(#fafafa, #eeefee);
+  background-image: -moz-linear-gradient(#fafafa, #eeefee);
+  background-image: -o-linear-gradient(#fafafa, #eeefee);
+  background-image: linear-gradient(#fafafa, #eeefee);
+  border-top: 1px solid #dadada;
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-bottom: 3px solid #527283; }
+  .page-control .page-control-inner {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #dadada;
+    height: 62px;
+    position: relative; }
+  .page-control ul {
+    position: absolute;
+    bottom: -4px;
+    left: 18px; }
+  .page-control li {
+    display: inline-block; }
+    .page-control li.active {
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 5px rgba(34, 34, 34, 0.1);
+      -moz-box-shadow: 0 0 5px rgba(34, 34, 34, 0.1);
+      box-shadow: 0 0 5px rgba(34, 34, 34, 0.1);
+      -webkit-border-radius: 2px 2px 0 0;
+      -moz-border-radius: 2px 2px 0 0;
+      -ms-border-radius: 2px 2px 0 0;
+      -o-border-radius: 2px 2px 0 0;
+      border-radius: 2px 2px 0 0; }
+    .page-control li a {
+      display: block;
+      padding: 13px 16px 14px;
+      margin: 0 2px;
+      font-size: 1.16em;
+      color: #313132;
+      text-decoration: none;
+      font-weight: 600; }
+      .page-control li a:hover {
+        color: #d11344; }
+
+#content {
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  background-color: #fff;
+  position: relative;
+  min-height: 200px; }

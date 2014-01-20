@@ -1,0 +1,44 @@
+.page-control {
+	@include background-image(linear-gradient(#fafafa, #eeefee));
+	border-top: 1px solid #dadada;
+	border-left: 1px solid #dadada;
+	border-right: 1px solid #dadada;
+	border-bottom: 3px solid #527283;
+
+	.page-control-inner {
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #dadada;
+		height: 62px;
+		position: relative;
+	}
+
+	ul {
+		position: absolute;
+		bottom: -4px;
+		left: 18px;
+	}
+
+	li {
+		display: inline-block;
+
+		&.active {
+			background-color: #fff;
+			@include box-shadow(0 0 5px rgba(34, 34, 34, 0.1));
+			@include border-radius(2px 2px 0 0);
+		}
+
+		a {
+			display: block;
+			padding: 13px 16px 14px;
+			margin: 0 2px;
+			font-size: 1.16em;
+			color: #313132;
+			text-decoration: none;
+			font-weight: 600;
+
+			&:hover {
+				color: #d11344;
+			}
+		}
+	}
+}
