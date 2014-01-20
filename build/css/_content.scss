@@ -5,4 +5,55 @@
 	background-color: #fff;
 	position: relative;
 	min-height: 200px;
+	padding: 24px 19px;
+}
+
+.dashboard-items {
+	li {
+		@include box-sizing(border-box);
+		width: 100%;
+		border-bottom: 1px solid #e5e5e5;
+		padding: 12px;
+		display: inline-block;
+
+		&.adopted { background-color: #fffde8; }
+		&.added { background-color: #e9fde9; }
+	}
+
+	.post-image {
+		@include border-radius(2px);
+		@include box-shadow(0 0 4px #d4d4d4);
+		border: 1px solid #d4d4d4;
+		background-color: #fff;
+		padding: 3px;
+		float: left;
+		margin-right: 26px;
+	}
+
+	.icon-field {
+		float: left;
+		margin-right: 20px;
+		line-height: 66px;
+	}
+
+	.post-desc {
+		float: left;
+
+		.post-ago {
+			color: #999;
+			line-height: 22px;
+		}
+
+		p {
+			line-height: 22px;
+			font-size: 1.08em;
+
+			.place {
+				color: #006699;
+				font-weight: 600;
+			}
+
+			.author { font-weight: 600; }
+		}
+	}
 }

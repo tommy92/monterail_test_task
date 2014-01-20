@@ -21,6 +21,8 @@ body {
 
 #wrapper {
 	margin-top: 28px;
+	margin-bottom: 28px;
+	overflow: hidden;
 
 	#main {
 		width: $mainWidth;
@@ -30,4 +32,13 @@ body {
 		width: $sidebarWidth;
 	}
 
+}
+
+.info-text {
+	margin: 24px 0 24px 10px;
+	color: #999;
+
+	&.as-dashboard-item {
+		margin-left: 147px;
+	}
 }

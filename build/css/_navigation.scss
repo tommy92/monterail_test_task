@@ -14,7 +14,7 @@
 
 	ul {
 		position: absolute;
-		bottom: -4px;
+		bottom: -6px;
 		left: 18px;
 	}
 
@@ -28,6 +28,7 @@
 		}
 
 		a {
+			@include text-shadow(1px 1px 1px #fff);
 			display: block;
 			padding: 13px 16px 14px;
 			margin: 0 2px;
@@ -35,6 +36,7 @@
 			color: #313132;
 			text-decoration: none;
 			font-weight: 600;
+			vertical-align: bottom;
 
 			&:hover {
 				color: #d11344;

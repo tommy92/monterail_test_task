@@ -1,0 +1,47 @@
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+
+	&.icon-activity {
+		background: url(../images/icons/icon-eye.png) no-repeat;
+		width: 16px;
+		height: 9px;
+	}
+
+	&.icon-apply {
+		background: url(../images/icons/icon-apply.png) no-repeat;
+		width: 16px;
+		height: 16px;
+	}
+
+	&.icon-settings {
+		background: url(../images/icons/icon-settings.png) no-repeat;
+		width: 16px;
+		height: 16px;
+	}
+
+	&.icon-checked {
+		background: url(../images/icons/icon-checked.png) no-repeat;
+		width: 16px;
+		height: 16px;
+	}
+
+	&.icon-edit {
+		background: url(../images/icons/icon-edit.png) no-repeat;
+		width: 16px;
+		height: 16px;
+	}
+
+	&.icon-adopted {
+		background: url(../images/icons/icon-adopted.png) no-repeat;
+		width: 16px;
+		height: 9px;
+	}
+
+	&.icon-add {
+		background: url(../images/icons/icon-add.png) no-repeat;
+		width: 16px;
+		height: 16px;
+	}
+}

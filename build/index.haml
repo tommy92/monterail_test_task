@@ -13,13 +13,92 @@
 					.page-control-inner
 						%ul
 							%li.active
-								%a.activity{ href: '#' } Aktywność
+								%a.activity{ href: '#' }
+									%i.icon.icon-activity
+									Aktywność
 							%li
-								%a.viewed{ href: '#' } Sprawdzone przeze mnie
+								%a.viewed{ href: '#' }
+									%i.icon.icon-apply
+									Sprawdzone przeze mnie
 							%li
-								%a.settings{ href: '#' } Ustawienia
+								%a.settings{ href: '#' }
+									%i.icon.icon-settings
+									Ustawienia
 
 				#content{ role: 'main' }
+					%p.info-text Lista zmian, które zaszły w zabytkach dodanych i adoptowanych przez Ciebie:
+
+					%ul.dashboard-items
+						%li
+							%img.post-image{ src: 'images/pictures/pic1.jpg', alt: 'tram' }
+							.icon-field
+								%i.icon.icon-checked
+							.post-desc
+								%span.post-ago wczoraj
+								%p
+									%span.place Most Grunwaldzki
+									został oznaczony jako
+									%span.badge.badge-checked Sprawdzony
+						%li
+							%img.post-image{ src: 'images/pictures/pic1.jpg', alt: 'tram' }
+							.icon-field
+								%i.icon.icon-edit
+							.post-desc
+								%span.post-ago 2 dni temu
+								%p
+									%span.place Most Grunwaldzki
+									został zmodyfikowany przez:
+									%span.author szymon
+						%li
+							%img.post-image{ src: 'images/pictures/no-pic.jpg', alt: 'no picture' }
+							.icon-field
+								%i.icon.icon-edit
+							.post-desc
+								%span.post-ago tydzień temu
+								%p
+									%span.place Most Grunwaldzki
+									został zmodyfikowany przez:
+									%span.author katarzyna
+						%li.adopted
+							%img.post-image{ src: 'images/pictures/pic2.jpg', alt: 'smth' }
+							.icon-field
+								%i.icon.icon-adopted
+							.post-desc
+								%span.post-ago tydzień temu
+								%p
+									adoptowano
+									%span.place Budynek Urzędu Wojewódzkiego we Wrocławiu
+						%li
+							%img.post-image{ src: 'images/pictures/no-pic.jpg', alt: 'no picture' }
+							.icon-field
+								%i.icon.icon-edit
+							.post-desc
+								%span.post-ago 2 tygodnie temu
+								%p
+									zmodyfikowany
+									%span.place Most Grunwaldzki
+						%li
+							%img.post-image{ src: 'images/pictures/no-pic.jpg', alt: 'no picture' }
+							.icon-field
+								%i.icon.icon-edit
+							.post-desc
+								%span.post-ago miesiąc temu
+								%p
+									%span.place Most Grunwaldzki
+									został zmodyfikowany przez:
+									%span.author katarzyna
+						%li.added
+							%img.post-image{ src: 'images/pictures/no-pic.jpg', alt: 'no picture' }
+							.icon-field
+								%i.icon.icon-add
+							.post-desc
+								%span.post-ago 6 października
+								%p
+									dodano
+									%span.place Most Grunwaldzki
+
+					%p.info-text.as-dashboard-item Jesteś przy ostaniej wiadomości.
+
 
 			%sidebar#sidebar
 
