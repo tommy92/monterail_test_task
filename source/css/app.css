@@ -326,7 +326,8 @@ img {
     padding-right: 0; }
 
   .dashboard-items li {
-    padding: 0; }
+    padding-left: 0;
+    padding-right: 0; }
     .dashboard-items li .post-desc {
       width: 53%;
       float: left; } }
