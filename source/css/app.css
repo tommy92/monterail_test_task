@@ -46,7 +46,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 .center {
-  width: 960px;
+  min-width: 600px;
+  max-width: 960px;
   margin: 0 auto; }
 
 .clearfix {
@@ -58,9 +59,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .fleft {
   float: left; }
-
-.fright {
-  float: right; }
 
 body {
   background-color: whitesmoke;
@@ -81,9 +79,9 @@ body {
   margin-bottom: 28px;
   overflow: hidden; }
   #wrapper #main {
-    width: 640px; }
+    width: 66.667%; }
   #wrapper #sidebar {
-    width: 320px; }
+    width: 33.333%; }
 
 .info-text {
   margin: 24px 0 24px 10px;
@@ -146,7 +144,6 @@ body {
   border-bottom: 1px solid #dadada;
   background-color: #fff;
   position: relative;
-  min-height: 200px;
   padding: 24px 19px; }
 
 .dashboard-items li {
@@ -176,19 +173,17 @@ body {
   float: left;
   margin-right: 20px;
   line-height: 66px; }
-.dashboard-items .post-desc {
-  float: left; }
-  .dashboard-items .post-desc .post-ago {
-    color: #999;
-    line-height: 22px; }
-  .dashboard-items .post-desc p {
-    line-height: 22px;
-    font-size: 1.08em; }
-    .dashboard-items .post-desc p .place {
-      color: #006699;
-      font-weight: 600; }
-    .dashboard-items .post-desc p .author {
-      font-weight: 600; }
+.dashboard-items .post-desc .post-ago {
+  color: #999;
+  line-height: 22px; }
+.dashboard-items .post-desc p {
+  line-height: 22px;
+  font-size: 1.08em; }
+  .dashboard-items .post-desc p .place {
+    color: #006699;
+    font-weight: 600; }
+  .dashboard-items .post-desc p .author {
+    font-weight: 600; }
 
 .icon {
   display: inline-block;
@@ -290,3 +285,48 @@ body {
     color: #006699;
     line-height: 28px;
     margin-bottom: 2px; }
+
+img {
+  max-width: 100%; }
+
+@media all and (max-width: 800px) {
+  .page-control ul {
+    left: 8px; }
+
+  .page-control li a {
+    padding: 13px 6px 14px; } }
+@media all and (max-width: 700px) {
+  #wrapper {
+    margin-top: 0;
+    margin-bottom: 0; }
+    #wrapper #main,
+    #wrapper #sidebar {
+      float: none;
+      width: 100%; } }
+@media all and (max-width: 600px) {
+  .center {
+    width: 100%;
+    min-width: initial;
+    max-width: initial; } }
+@media all and (max-width: 500px) {
+  .page-control .page-control-inner {
+    height: auto; }
+  .page-control ul {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    text-align: center; }
+    .page-control ul li {
+      display: block; }
+      .page-control ul li .icon {
+        background: none; }
+
+  #content {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .dashboard-items li {
+    padding: 0; }
+    .dashboard-items li .post-desc {
+      width: 53%;
+      float: left; } }

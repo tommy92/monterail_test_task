@@ -24,17 +24,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		concat: {
-			options: {
-				separator: '\n',
-			},
-
-			dist: {
-				src: ['build/js/app.js'],
-				dest: 'source/js/app.js',
-			},
-		},
-
 		watch: {
 			sass: {
 				files: ['build/css/*.scss'],
@@ -44,11 +33,6 @@ module.exports = function(grunt) {
 			haml: {
 				files: 'build/*.haml',
 				tasks: ['haml']
-			},
-
-			scripts: {
-				files: 'build/js/*.js',
-				tasks: ['concat']
 			},
 
 			gruntfile: {
@@ -73,7 +57,6 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-haml');
 	grunt.loadNpmTasks('grunt-contrib-compass');
-	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
